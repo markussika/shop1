@@ -47,4 +47,10 @@ class UserController extends Controller
             dd("dsfbgd");
         }
     }
+
+    public function logout() {
+        auth()->logout();
+
+        return redirect("/products");
+    }
 }

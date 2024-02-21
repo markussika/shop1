@@ -33,3 +33,5 @@ Route::post("/register", [UserController::class, "store"]);
 
 Route::get("/login", [UserController::class, "login"]);
 Route::post("/login", [UserController::class, "signin"]); // Ļoti nepareizi, labāk būtu login2, vēl labāk - uztaisīt atsevišķu Controller
+
+Route::post("/logout",[UserController::class, "logout"]);
