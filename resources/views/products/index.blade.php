@@ -19,6 +19,12 @@
     </form>
   </div>
  @endauth
+  @guest
+  <div>
+    <p><a href="/login">log in</a><p>
+    <p><a href="/register">register</a><p>
+    </div>
+  @endguest
  </header>
   <main>
   <h1>Products</h1>
